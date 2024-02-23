@@ -36,8 +36,18 @@ var_dump($newstoriella);
     <div>
         <?php echo "La storiella dell'utente è: " . $storiella; ?>
     </div>
+    <!-- con il comando   echo strlen($stringa);   vado a stampare la lunghezza della mia variabile -->
+    <div>
+        <?php echo "La lunghezza della storiella è " . strlen($storiella); ?>
+    <div>
+    </div>
+
     <div>
         <?php echo "La storiella CENSURATA dell'utente è: " . $newstoriella; ?>
     </div>
+    <div>
+        <?php echo "La lunghezza della storiella censurata è " . strlen($newstoriella);
+        ?>
+    <div>
 </body>
 </html>
