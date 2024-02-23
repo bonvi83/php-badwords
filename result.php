@@ -1,6 +1,8 @@
 <?php
 // creo la mia variabile per la storiella
 $storiella = $_GET["storiella"];
+
+// il vecchio console. log()
 var_dump($storiella);
 
 // creo la mia variabile per la parola da censurare
@@ -22,13 +24,20 @@ var_dump($newstoriella);
 
 <!-- VADO A STAMPARE IL TUTTO IN UN NUOVO DOCUMENTO HTML -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuova storiella</title>
 </head>
 <body>
-    
+    <!-- con echo stampo in html -->
+    <h3>Storiella CENSURATA</h3>
+    <div>
+        <?php echo "La storiella dell'utente è: " . $storiella; ?>
+    </div>
+    <div>
+        <?php echo "La storiella CENSURATA dell'utente è: " . $newstoriella; ?>
+    </div>
 </body>
 </html>
